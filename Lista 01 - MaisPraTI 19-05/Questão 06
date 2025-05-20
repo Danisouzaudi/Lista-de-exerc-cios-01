@@ -1,0 +1,17 @@
+let LA = Number(prompt('Digite um número inteiro para o lado A do triângulo: ')) 
+let LB = Number(prompt('Digite um número inteiro para o lado B do triângulo: '))
+let LC = Number(prompt('Digite um número inteiro para o lado C do triângulo: '))
+
+if((LA < LB + LC) && (LB < LA + LC) && (LC < LA + LB)){
+
+    if((LA == LB) && (LB == LC)){
+        console.log('Os lados fornecidos formam um Triângulo Equilátero!')
+    }else if((LA == LB) || (LA == LC) || (LB == LC)){
+        console.log('Os lados fornecidos formam um Triângulo Isósceles!')
+    }else{
+        console.log('Os lados fornecidos formam um Triângulo Escaleno!')
+    }
+
+}else{
+    console.log('Os lados fornecidos não formam um triângulo!')
+}

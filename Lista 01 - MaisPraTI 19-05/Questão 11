@@ -1,0 +1,7 @@
+let numberInt = Number(prompt('Digite um número: '))
+
+for(let numb = 1; numb <= 10; numb++){
+    console.log(`${numb}ª vez: ${numberInt}`)
+}
+
+console.log('Repetição Finalizada!')

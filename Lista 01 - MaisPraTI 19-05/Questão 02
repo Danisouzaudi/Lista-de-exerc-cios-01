@@ -1,0 +1,15 @@
+//solicita a idade do usuário
+let IDADE = Number(prompt('Qual sua idade: '))
+
+//função criada para definir em qual faixa etária o usuário se encontra
+if((IDADE >= 2) && (IDADE <= 11)){
+    console.log('Você é uma Criança!')
+}else if((IDADE >= 12) && IDADE <=17){
+    console.log('Você é um Adolescente!')
+}else if((IDADE >= 18) && (IDADE <= 59)){
+    console.log('Você é um Adulto!')
+}else if(IDADE >= 60){
+    console.log('Você é um Idoso!')
+}else{
+    console.log('Digite um número válido!')
+}

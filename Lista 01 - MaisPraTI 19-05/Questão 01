@@ -1,0 +1,11 @@
+// Solicita ao usuário que digite um número
+let numero = Number(prompt("Digite o número que deseja verificar:"));
+
+// Função para verificar se o número é par ou ímpar
+if (numero % 2 === 0) {
+    alert("O número ${numero} é Par.");
+} else {
+    alert("O número ${numero} é Ímpar.");
+}
+
+

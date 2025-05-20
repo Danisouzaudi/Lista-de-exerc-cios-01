@@ -1,0 +1,20 @@
+//replace foi usado para ler as entradas que tenham ','
+let altura = parseFloat(prompt('Por favor, digite a sua altura: ').replace(',', '.'))
+let peso = parseFloat(prompt('Por favor, digite o seu peso: ').replace(',', '.'))
+
+let IMC = peso/(altura * altura)
+
+//toFixed(2) formata o resultado para duas casas decimais, como 24.21.
+console.log(`O seu Índice de Massa Corporal (IMC) é ${IMC.toFixed(2)}`)
+
+if(IMC < 18.5){
+    console.log(`O IMC corresponde a Baixo peso!`)
+}else if(IMC < 24.9){
+    console.log(`O IMC corresponde a peso Normal!`)
+}else if(IMC < 29.9){
+    console.log(`O IMC corresponde a Sobrepeso!`)
+}else if(IMC < 39.9){
+    console.log(`O IMC corresponde a Obesidade!`)
+}else{
+    console.log(`O IMC corresponde a Obesidade grave!`)
+}
